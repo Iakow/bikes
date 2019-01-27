@@ -1,0 +1,27 @@
+{
+  "name": "gulp-ofdoc",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "iakow <ponomarykov@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.2.1",
+    "slick-carousel": "^1.8.1",
+    "wow": "^1.1.2",
+    "animate.css": "animate-css#^3.7.0",
+    "jquery-lazy": "^1.7.10",
+    "normalize-css": "^8.0.1",
+    "fancybox": "fancyBox#^3.5.6"
+  }
+}
