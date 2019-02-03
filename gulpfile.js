@@ -26,7 +26,7 @@ function buildLibsJS() {
 function buildLibsCss() {
   console.log('build css');
   return gulp.src([
-      //'src/libs/normalize-css/normalize.css',
+      'src/libs/normalize-css/normalize.css',
       'src/libs/bootstrap/dist/css/bootstrap-grid.css',
       'src/libs/animate.css/animate.css',
       'src/libs/slick-carousel/slick/slick.css',
