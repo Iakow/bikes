@@ -63,7 +63,7 @@ function goSass () {
 }
 
 function goPug () {
-  return gulp.src('src/pug/index.pug')
+  return gulp.src('src/pug/**/*.pug')
         .pipe(pug(/* {pretty: true} */))
         .pipe(gulp.dest('src'))
         .pipe(browserSync.stream());

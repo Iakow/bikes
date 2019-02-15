@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 html(lang="en")
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-		title Поменять название
-		link(rel="stylesheet" href="../css/style.min.css")
-		link(rel='stylesheet' href='../css/libs.min.css')
-	body
-		h1 go work
-		script(src='js/libs.min.js')
-		script(src='js/app.js')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Поменять название
+    link(rel="stylesheet" href="../css/style.min.css")
+    link(rel='stylesheet' href='../css/libs.min.css')
+  body
+    .container
+      
+      header
+        .row
+          .col-2
+            img.header-logo(src="img/logo.png", alt="")
+          .col-9
+            nav.header-menu
+              a(href="#")
+                |Снегоходы
+                br 
+                |и квадроциклы
+              a(href="#")
+                |Пейнтбол
+                br
+                |и тир
+              a(href="#")
+                |Рыбалка, лыжи,
+                br
+                |зимние забавы
+              a(href="#")
+                |Подарочные
+                br
+                | сертификаты
+
+        .row
+          .col-2
+          .col-4
+            div.header-phone
+              div.header-phone__pic
+              div.header-phone__num
+                |+7 (985) 85-999-05
+          .col-3
+            div.header-contacts
+              div.header-contacts__pic
+              div.header-contacts__descr
+                |Контакты
+          .col
+            a.header-promo(href="#")
+              div.header-promo__button
+                div.header-promo__ico
+                span.header-promo__text
+                  |Акции
+              
+
+
+
+
+
+    script(src='js/libs.min.js')
+    script(src='js/app.js')
