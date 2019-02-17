@@ -27,11 +27,11 @@ function buildLibsCss() {
   console.log('build css');
   return gulp.src([
       'src/libs/normalize-css/normalize.css',
-      'src/libs/bootstrap/dist/css/bootstrap-grid.css',
+      //'src/libs/bootstrap/dist/css/bootstrap-grid.css',
       'src/libs/animate.css/animate.css',
-      'src/libs/slick-carousel/slick/slick.css',
-      'src/libs/slick-carousel/slick/slick-theme.css',
-      'src/libs/fancybox/dist/jquery.fancybox.css'
+      //'src/libs/slick-carousel/slick/slick.css',
+      //'src/libs/slick-carousel/slick/slick-theme.css',
+      //'src/libs/fancybox/dist/jquery.fancybox.css'
       ], { allowEmpty: true })
       .pipe(concat('libs.min.css'))
       .pipe(cssnano())
@@ -64,7 +64,7 @@ function goSass () {
 
 function goPug () {
   return gulp.src('src/pug/**/*.pug')
-        .pipe(pug(/* {pretty: true} */))
+        .pipe(pug( {pretty: true} ))
         .pipe(gulp.dest('src'))
         .pipe(browserSync.stream());
 }
