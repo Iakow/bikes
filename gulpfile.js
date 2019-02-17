@@ -12,11 +12,11 @@ const del = require('gulp-clean');
 function buildLibsJS() {
   console.log('build js');
   return gulp.src([
-      'src/libs/jquery/dist/jquery.min.js',
-      'src/libs/slick-carousel/slick/slick.js',
-      'src/libs/wow/dist/wow.js',
-      'src/libs/jquery-lazy/jquery.lazy.js',
-      'src/libs/fancybox/dist/jquery.fancybox.js'
+      'bower_components/jquery/dist/jquery.min.js',
+      'bower_components/slick-carousel/slick/slick.js',
+      'bower_components/wow/dist/wow.js',
+      'bower_components/jquery-lazy/jquery.lazy.js',
+      'bower_components/fancybox/dist/jquery.fancybox.js'
       ], { allowEmpty: true })
       .pipe(concat('libs.min.js'))
       .pipe(uglify())
@@ -26,12 +26,12 @@ function buildLibsJS() {
 function buildLibsCss() {
   console.log('build css');
   return gulp.src([
-      'src/libs/normalize-css/normalize.css',
-      //'src/libs/bootstrap/dist/css/bootstrap-grid.css',
-      'src/libs/animate.css/animate.css',
-      //'src/libs/slick-carousel/slick/slick.css',
-      //'src/libs/slick-carousel/slick/slick-theme.css',
-      //'src/libs/fancybox/dist/jquery.fancybox.css'
+      'bower_components/normalize-css/normalize.css',
+      //'bower_components/bootstrap/dist/css/bootstrap-grid.css',
+      'bower_components/animate.css/animate.css',
+      //'bower_components/slick-carousel/slick/slick.css',
+      //'bower_components/slick-carousel/slick/slick-theme.css',
+      //'bower_components/fancybox/dist/jquery.fancybox.css'
       ], { allowEmpty: true })
       .pipe(concat('libs.min.css'))
       .pipe(cssnano())
@@ -44,7 +44,7 @@ function serve (done) {
       baseDir: "./src"
     }
   });
-  gulp.watch('src/pug/**/*.pug', goPug);
+  gulp.watch('src/pug/*.pug', goPug);
   gulp.watch('src/sass/*.sass', goSass);
   gulp.watch('src/js/*.js').on('change', browserSync.reload);
   gulp.watch('src/*.html').on('change', browserSync.reload);
@@ -63,7 +63,7 @@ function goSass () {
 }
 
 function goPug () {
-  return gulp.src('src/pug/**/*.pug')
+  return gulp.src('src/pug/*.pug')
         .pipe(pug( {pretty: true} ))
         .pipe(gulp.dest('src'))
         .pipe(browserSync.stream());
