@@ -4,4 +4,7 @@
 node_modules
 bower_components
 .vscode
+src/css
+src/js/libs.min.js
+src/index.html
 
