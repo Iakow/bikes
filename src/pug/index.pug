@@ -11,9 +11,9 @@ html(lang="en")
     .container
       //-------------------- HEADER -----------------------
       header.header
-          img.header-logo(src="img/logo.png", alt="")
-          .header-menu
-            nav.header-nav
+          img.logo.header__logo(src="img/logo.png", alt="")
+          .header__menu-block
+            nav.header__nav
               a(href="#bikes")
                 |Снегоходы
                 br 
@@ -30,11 +30,11 @@ html(lang="en")
                 |Подарочные
                 br
                 | сертификаты
-
-            .header-info
-              .header-phone
-                .phone__pic
-                .header-phone__num
+                
+            .header__info
+              .phone.header__phone
+                .phone__pic.phone__pic_blue
+                .phone__num.phone__num_big
                   |+7 (985) 85-999-05
 
               .header-contacts
@@ -137,8 +137,8 @@ html(lang="en")
 
           include modules/button_more
 
-        img.fishing-pic.fisherman1.features-card.wow.bounceInDown(data-wow-offset="200" data-wow-delay='0.1s' src="img/fisherman.png", alt="")
-        img.fishing-pic.fisherman2.features-card.wow.bounceInDown(data-wow-offset="200" data-wow-delay='0.1s' src="img/fisherman2.png", alt="")
+        img.fishing-pic.fisherman1.features-card.wow.bounceInDown(data-wow-offset="200" data-wow-delay='0.01s' src="img/fisherman.png", alt="")
+        img.fishing-pic.fisherman2.features-card.wow.bounceInDown(data-wow-offset="200" data-wow-delay='0.01s' src="img/fisherman2.png", alt="")
 
       
       //--------------------- SKIING --------------------
@@ -185,15 +185,15 @@ html(lang="en")
           h2.contacts__title
             |контакты
 
-          div.contacts__phone
-            //- иконка
-            .contacts-pic__phone
-            p +7 (985) 85-999-05
+          div.phone.contacts__phone
+            .phone__pic.phone__pic_white
+            .phone__num.phone__num_small
+              |+7 (985) 85-999-05
 
-          div.contacts__phone
-            //- иконка
-            .contacts-pic__phone
-            p +7 (925) 56-005-01
+          div.phone.contacts__phone
+            .phone__pic.phone__pic_white
+            .phone__num.phone__num_small
+              |+7 (925) 56-005-01
 
           div.contacts__mail
             //- иконка
@@ -216,7 +216,7 @@ html(lang="en")
         img.contacts-pic__children(src="img/contacts/contacts_picture.png", alt="")
         img.contacts-pic__bigmap(src="img/contacts/pic_main.png", alt="")
 
-      //-------------------- FOOTER --------------------
+    //-------------------- FOOTER --------------------
     footer
       .container.footer
         a.up-button(href="#")
