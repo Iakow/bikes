@@ -44,8 +44,8 @@ function serve (done) {
       baseDir: "./src"
     }
   });
-  gulp.watch('src/pug/*.pug', goPug);
-  gulp.watch('src/sass/*.sass', goSass);
+  gulp.watch('src/**/*.pug', goPug);
+  gulp.watch('src/**/*.sass', goSass);
   gulp.watch('src/js/*.js').on('change', browserSync.reload);
   gulp.watch('src/*.html').on('change', browserSync.reload);
 
