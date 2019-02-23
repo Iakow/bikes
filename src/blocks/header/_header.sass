@@ -1,49 +1,46 @@
 .header
   display: flex
   padding-top: 16px
-  
-.logo
-  height: 134px
-  width: 134px
 
-.header__logo
-  margin-left: 15px
+  &__logo
+    margin-left: 15px
 
-.header__menu-block
-  margin-left: 62px
-  margin-top: 11px
-  width: 854px
+  &__inner
+    margin-left: 62px
+    margin-top: 11px
+    width: 854px
 
-.header__nav
-  padding-left: 7px
-  padding-right: 26px
+  &__inner2
+    margin-top: 37px
+    display: flex
+    justify-content: space-between
 
-  display: flex
-  justify-content: space-between
+  &__nav
+    padding-left: 7px
+    padding-right: 26px
+    display: flex
+    justify-content: space-between
+    font-family: "GT Walsheim Pro Bold"
+    font-size: 18px
+    line-height: 24px
+    letter-spacing: 1.8px
+    a
+      color: #ffffff
+      &:hover
+        color: #143e65
 
-  font-family: "GT Walsheim Pro Bold"
-  font-size: 18px
-  line-height: 24px
-  letter-spacing: 1.8px
-  a
-    color: #ffffff
-    &:hover
-      color: #143e65
+  &__phone
+    margin-left: 6px
+    margin-right: 15px
 
-.header__info
-  margin-top: 37px
-  display: flex
-  justify-content: space-between
-
-.header__phone
-  margin-left: 6px
-  margin-right: 15px
-  
 .header-contacts
+  text-decoration:none!important
+  display: block
   display: flex
   align-items: center
   margin-left: 8px
-  &__descr
+  
+  &__txt
     margin-left: 19px
     color: #143e65
     font-family: "GT Walsheim Pro Bold"
@@ -52,11 +49,6 @@
     line-height: 24px
     letter-spacing: 2.4px
 
-.map__pic
-  width: 39px
-  height: 39px
-  border-radius: 50%
-  background: #143e65 url(../img/header-contact.png) no-repeat center
 
 .header-promo
   text-decoration:none!important

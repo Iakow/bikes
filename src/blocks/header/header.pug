@@ -1,0 +1,24 @@
+header.header(id='top')
+  +logo('header__logo')
+
+  .header__inner
+    nav.header__nav
+      a(href="#bikes")   Снегоходы <br> и квадроциклы
+      a(href="#tir")     Пейнтболn <br> и тир
+      a(href="#fishing") Рыбалка, лыжи, <br> зимние забавы
+      a(href="#gifts")   Подарочные <br> сертификаты
+        
+    .header__inner2
+      a.phone.header__phone(href="tel:+79858599905")
+        .pic.pic--phone--blue
+        .phone__num.phone__num--big +7 (985) 85-999-05
+
+      a.header-contacts(href="#contacts")
+        .pic.pic--map--blue
+        .header-contacts__txt
+          |Контакты
+
+      a.header-promo(href="#")
+        .header-promo__button
+          .header-promo__ico
+          span.header-promo__text Акции

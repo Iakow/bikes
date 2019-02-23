@@ -1,0 +1,7 @@
+mixin btn(mod)
+  -if (mod == 'more')
+    a(class='btn btn--' + mod href="#")='подробнее'
+  -else if (mod == 'order')
+    a(class='btn btn--' + mod href="#")='оформить заказ'
+  -else
+    a(class='btn btn--' + mod href="#")='Неверный модификатор'
