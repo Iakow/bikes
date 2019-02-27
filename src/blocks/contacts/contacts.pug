@@ -1,0 +1,35 @@
+section.contacts(id='contacts')
+  .contacts__inner
+    .contacts-card
+      h2.contacts-card__title
+        |контакты
+
+      .phone.contacts-card__item
+        .pic.pic--phone--white
+        .phone__num.phone__num--small
+          |+7 (985) 85-999-05
+
+      .phone.contacts-card__item
+        .pic.pic--phone--white
+        .phone__num.phone__num--small
+          |+7 (925) 56-005-01
+
+
+      .mail.contacts-card__item
+        .pic.pic--mail
+        p zakaz@moto-naprokat.ru
+
+      .coordinates
+        .pic.pic--map--white
+        .coordinates__text
+          .coordinates__text--title
+            |Координаты:
+          .coordinates__text--row
+            |56.040962, 36.863252
+          .coordinates__text--row
+            |56.040962, 36.863252
+      +btn('order')
+
+  img.fig.fig--map-shadow(src="img/contacts/map_shadow.png", alt="")
+  img.fig.fig--children-sanki(src="img/contacts/contacts_picture.png", alt="")
+  img.fig.fig--bigmap(src="img/contacts/pic_main.png", alt="")
