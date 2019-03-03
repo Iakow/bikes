@@ -1,11 +1,10 @@
 .page
   background-image: url(../img/bg3.png)
-  @media (max-width: 1200px)
-    background-image: url(../img/tablet_bg.png)
   background-position-x: center
   background-repeat: no-repeat
   overflow-x: hidden
-
+  @media (max-width: 1200px)
+    background-image: url(../img/tablet_bg.png)
 a
   text-decoration:none!important
   
@@ -13,7 +12,8 @@ a
   width: 1200px
   position: relative
   margin: 0 auto
-  
+  @media (max-width: 1200px)
+    width: 768px
 
 @font-face 
   font-family: 'GT Walsheim Pro Bold'

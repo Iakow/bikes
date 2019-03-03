@@ -2,13 +2,24 @@
   width: 39px
   height: 39px
   border-radius: 50%
+  background: #143e65 no-repeat center
+
+  @media (max-width: 1200px)
+    width: 26px
+    height: 26px
+    background-size: 64%
+
   &--map--blue
-    background: #143e65 url(../img/header-contact.png) no-repeat center
+    background-image: url(../img/header-contact.png)
+
   &--map--white
-    background: #143e65 url(../img/contacts/map.png) no-repeat center
+    background-image: url(../img/contacts/map.png)
+  
   &--phone--blue
-    background: #143e65 url(../img/header-phone.png) no-repeat center
+    background-image: url(../img/header-phone.png)
+  
   &--phone--white
-    background: #143e65 url(../img/contacts/phone.png) no-repeat center
+    background-image: url(../img/contacts/phone.png)
+  
   &--mail
-    background: #143e65 url(../img/contacts/letter.png) no-repeat center
+    background-image: url(../img/contacts/letter.png)
