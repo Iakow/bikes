@@ -56,6 +56,8 @@
   display: flex
   align-items: center
   margin-left: 8px
+  @media (max-width: 1200px)
+    margin-left: 0
   
   &__txt
     margin-left: 19px
@@ -68,6 +70,8 @@
     @media (max-width: 1200px)
       font-size: 16px
       letter-spacing: 2.52px
+      line-height: 23px
+      margin-left: 6px
 
 
 .header-promo
@@ -76,7 +80,6 @@
   margin-left: 24px
   
   &__button
-    box-sizing: border-box
     display: flex
     width: 105px
     height: 31px
@@ -85,10 +88,11 @@
     padding-left: 58px
     padding-top: 8px
     @media (max-width: 1200px)
-      height: 26px
-      padding-left: 39px;
+      height: 19px
+      padding-left: 0px;
       padding-top: 6px;
       background-size: 16%
+      background-position: 8px 4px
 
       
   &__ico
@@ -102,3 +106,5 @@
     @media (max-width: 1200px)
       font-size: 15px
       line-height: 15.22px
+      padding-left: 37px
+      letter-spacing: 2.0px
