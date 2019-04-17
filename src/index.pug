@@ -12,8 +12,8 @@ html(lang="ru")
     link(rel="stylesheet" href="css/style.min.css")
     link(rel='stylesheet' href="css/libs.min.css")
 
-  body.page
-    .page__container
+  body
+    .page-container
       include blocks/header/header
       include blocks/main/main
       include blocks/bikes/bikes
@@ -22,7 +22,7 @@ html(lang="ru")
       include blocks/skiing/skiing
       include blocks/fun/fun
       include blocks/contacts/contacts
-    include blocks/footer/footer
+      include blocks/footer/footer
 
     script(src='js/libs.min.js')
     script(src='js/app.js')

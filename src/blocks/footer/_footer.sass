@@ -1,19 +1,10 @@
-footer
+.footer
+  padding-top: 30px
   padding-bottom: 30px
   background-color: #59ace7
-
-  @media (max-width: 1200px)
-    width: 768px
-    margin: auto
-    padding-bottom: 19px
-
-.footer
-  //width: 100%
-  padding-top: 30px
   display: flex
   justify-content: space-between
   color: #ffffff
-  
   font-family: "GT Walsheim Pro Regular"
   font-size: 18px
   font-weight: 400
@@ -21,62 +12,69 @@ footer
   letter-spacing: 1.8px
 
   @media (max-width: 1200px)
+    width: 768px
+    margin: auto
     padding-top: 18px;
+    padding-bottom: 19px
+    
 
-  .up-button
-    margin-left: 22px
-    width: 42px
-    height: 42px
-    border-radius: 50%
-    background: #ffffff url('../img/footer/up.png') no-repeat center
-    @media (max-width: 1200px)
-      width: 34px
-      height: 34px
-      margin-left: 31px
+.footer__up-button
+  margin-left: 22px
+  width: 42px
+  height: 42px
+  border-radius: 50%
+  background: #ffffff url('../img/footer/up.png') no-repeat center
+  @media (max-width: 1200px)
+    width: 34px
+    height: 34px
+    margin-left: 31px
 
-  .social
-    display: flex
-    justify-content: space-between
-    width: 154px
-    margin-right: 1.9%
-    margin-top: 12px
-    margin-left: 15%
+.footer__social
+  display: flex
+  justify-content: space-between
+  width: 154px
+  margin-right: 1.9%
+  margin-top: 12px
+  margin-left: 15%
+  @media (max-width: 1200px)
+    width: 124px;
+    margin-right: 3.9%;
+    margin-top: 2px;
+    margin-left: 18%;
+  img
     @media (max-width: 1200px)
-      width: 124px;
-      margin-right: 3.9%;
-      margin-top: 2px;
-      margin-left: 18%;
-    img
-      @media (max-width: 1200px)
-        width: 24px
-  .esttk
-    display: flex
-    align-items: center
-    margin-right: 9%
-    img
-      margin-bottom: 9px
-      margin-left: 13px
-      width: 49px
-      height: 29px
-      
-      @media (max-width: 1200px)
-        width: 40px
-        height: 24px
-        margin-bottom: 8px
-        margin-left: 8px
-      
-  .text
-    width: 668px
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    p
-      margin: 0
-      padding-top: 5px
+      width: 24px
 
+
+.footer__esttk
+  display: flex
+  align-items: center
+  margin-right: 9%
+  img
+    margin-bottom: 9px
+    margin-left: 13px
+    width: 49px
+    height: 29px
+    
     @media (max-width: 1200px)
-      width: 358px
-      flex-direction: column
-      font-size: 14px;
-      align-items: flex-start
+      width: 40px
+      height: 24px
+      margin-bottom: 8px
+      margin-left: 8px
+    
+
+.footer__text
+  width: 668px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  p
+    margin: 0
+    padding-top: 5px
+
+  @media (max-width: 1200px)
+    width: 358px
+    flex-direction: column
+    font-size: 14px;
+    align-items: flex-start
