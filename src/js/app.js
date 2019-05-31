@@ -21,4 +21,4 @@ alert(x);
 
 alert(screen.width);
 
-alert(window.devicePixelRatio)
+alert(window.devicePixelRatio);
