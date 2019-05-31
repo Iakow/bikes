@@ -15,3 +15,8 @@ $(document).ready(function(){
     return false;s
   });
 });
+
+var x = $(window).width();
+alert(x);
+
+alert(screen.width);
